@@ -1,9 +1,11 @@
 import type { NextPage } from 'next'
-
-
+import { Card } from 'primereact/card';
 const Home: NextPage = () => {
   return <>
-    <h1>Hello</h1>
+    <Card title="Title" subTitle="SubTitle">
+      Content
+    </Card>
+
   </>
 }
 
