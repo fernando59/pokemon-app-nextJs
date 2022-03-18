@@ -1,5 +1,6 @@
 import { FC } from "react"
 import Head from "next/head"
+import { Navbar } from "../ui"
 
 
 interface Props{
@@ -17,6 +18,7 @@ export const Layout: FC<Props> = ({ children,title }) => {
 
 
         {/* NAVBAR */}
+        <Navbar/>
 
 
         <main>
