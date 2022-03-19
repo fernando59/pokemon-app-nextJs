@@ -1,0 +1,22 @@
+
+.gridPokemons{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 10px;
+    margin: 10px auto;
+    width: 90%;
+}
+.imgExample{
+    width: 100px;
+    height: 100px;
+}
+.cardContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pCardContent{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}

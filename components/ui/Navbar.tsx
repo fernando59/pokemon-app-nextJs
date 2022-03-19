@@ -2,9 +2,6 @@ import { Menubar } from 'primereact/menubar';
 import Image from 'next/image'
 export const Navbar = () => {
     const items = [
-        // {
-        //     label:<p><h/p>
-        // },
         {
             label: 'Pokemons',
             items: [{ label: 'New', icon: 'pi pi-fw pi-plus', command: () => { window.location.hash = "/fileupload"; } },
@@ -18,7 +15,12 @@ export const Navbar = () => {
     ]
     const start = <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <Image height={80} width={80} src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png" alt="Icon Pokemon" />
-        <p style={{ fontSize: 30, padding: 20 }}> <span style={{ fontSize: 40 }}>P</span>okemon</p></div>
+        <p style={{ fontSize: 30, padding: 20 }}> <span style={{ fontSize: 40 }}>P</span>okemon</p>
+
+    </div>
+
+
+
     return <>
         <Menubar model={items} start={start} />
 
